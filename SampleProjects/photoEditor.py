@@ -1,6 +1,7 @@
 from PIL import Image, ImageEnhance, ImageFilter
 import os
 
+# ask from chat-gpt: how to find correct dir???
 path = './images'
 pathOut = '/editedImage'
 
