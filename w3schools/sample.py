@@ -1,1 +1,1 @@
-5 *5
+print("\nHello world")
