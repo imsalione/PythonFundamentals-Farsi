@@ -1,7 +1,10 @@
-def my_func(num1, num2):
-    return num1 + num2
+import sys
 
-a = int(input("Enter num 1: "))
-b = int(input("Enter num 2: "))
-
-print('The sum is: ', my_func(a, b))
+while True:
+    try:
+        a = int(input("Enter number 1: "))
+        b = int(input("Enter number 2: "))
+        print("The sum is: ", a + b)
+        sys.exit()
+    except ValueError:
+        print("You shoud enter an integer number!")
