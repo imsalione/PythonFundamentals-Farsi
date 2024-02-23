@@ -4,7 +4,7 @@ import time
 
 food_age = 500
 food_number = 10
-player_char = '🏃'
+player_char = '😋'
 food_char = '🍕'
 enemy_char = '👾'
 
@@ -123,11 +123,12 @@ def move_enemy():
             enemy[i] = (l, c)
             l in range(l, 0, maxl)
             c in range(c, 0, maxl)
+            enemy[i] = (l, c)
             
         if l == player_l and c == player_c:
             stdscr.addstr(maxl//2, maxc//2, "You DIED!")
             stdscr.refresh()
-            time.sleep()
+            time.sleep(3)
             playing = False
 
 init()
@@ -147,9 +148,8 @@ while playing:
     time.sleep(0.01)
     draw()
 
-stdscr.addnstr(maxl//2, maxc//2, "Thanks for playing")
+stdscr.addstr(maxl//2, maxc//2, "Thanks for playing")
 stdscr.refresh()
 time.sleep(2)
 stdscr.clear()
 stdscr.refresh()
-
