@@ -23,6 +23,7 @@ while True:
             num2 = float(input("Enter second number: "))
         except ValueError:
             print("Invalid input. Please enter a number.")
+            continue
             
         if choice == '1':
             print(num1, "+", num2, "=", calculate(num1, num2)) 
