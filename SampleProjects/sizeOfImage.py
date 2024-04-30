@@ -1,5 +1,9 @@
 import os
 
+folder_name = "images"
+file_name = "512kb.jpg"
+file_path = os.path.join(folder_name, file_name)
+
 def jpeg_res(filename):
     
     # open image for reading in binary mode:
@@ -22,7 +26,4 @@ def jpeg_res(filename):
         
     print("The resolution of the image is", width, "x", height)
     
-folder_name = "images"
-file_name = "512kb.jpg"
-file_path = os.path.join(folder_name, file_name)
 jpeg_res(file_path)
