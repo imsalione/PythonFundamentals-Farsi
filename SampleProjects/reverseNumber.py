@@ -8,7 +8,7 @@ while True:
             reversed_num = reversed_num * 10 + digit
             num //= 10
             
-        print("Reversed Number: " + str(reversed_num))
+        print(f"Reversed Number: {str(reversed_num)}")
         break
         
     except ValueError:
