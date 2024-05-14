@@ -1,3 +1,8 @@
 {
-    "notebook.output.wordWrap": true
+    "notebook.output.wordWrap": true,
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }
